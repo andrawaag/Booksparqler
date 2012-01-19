@@ -1,0 +1,593 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix le: <http://linkedevents.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix og: <http://ogp.me/ns#> .
+
+<http://qrate.me/4> rdf:id "4" ;
+                    le:atTime "0000-00-00" ;
+                    dc:title "Integrated representation of molecular, clinical and epidemiological data for biomarker identification" ;
+                    dbpedia:author "HF Deus" ,
+                                   "B Hennessy" ,
+                                   "R Stanislaus" ,
+                                   "JM Arthur" ,
+                                   "GB Mills" ,
+                                   "JS Almeida" ;
+                    vcard:category "Biological Sciences" ,
+                                   "Bioinformatics" .
+
+<http://qrate.me/5> rdf:id "5" ;
+                    le:atTime "0000-00-00" ;
+                    dc:title "A Semantic Web Infrastructure for Bioinformatics of  Staphylococcus aureus" ;
+                    dbpedia:author "Candida Delgado" ,
+                                   "Jonas Almeida" ,
+                                   "Maria Miragaia" ,
+                                   "HermÃ­nia de Lencastre" ,
+                                   "Study Group  on Molecular Epidemiology of Staphylococcus" ,
+                                   "Helena F Deus" ;
+                    dc:description """Staphylococcus aureus, a leading cause of human bacterial infections worldwide, can cause a wide range of diseases. In Europe, hospital-acquired methicillin-resistant Staphylococcus aureus infections are estimated to affect more than 150,000 patients annually. Although much is known about this pathogen, the efficient sharing and linking of knowledge is still hampered by scarce bioinformatics infrastructures.
+Linked Data consists of a set of best practices for enabling standardized access and query over aggregated data. This integrative potential can be employed in the development stage of bioinformatics apparatus that support molecular epidemiology research. Furthermore, recent developments have made JavaScript a powerful prototype-based object-oriented scripting language, ideal for web-based user interfaces. In this report we exploit the Simple Sloppy Semantic Database (S3DB), as the basis for an extensible, usage-oriented, bioinformatics infrastructure geared towards the study of Staphylococcus aureus epidemiology.
+The key outcomes of this work are an Ontology model for Staphylococcus epidemiology and a JavaScript system designed to simplify visualization and interpretation of high-throughput datasets submitted to S3DB (S3DB Ontology Analytics). Both were primarily designed based on requirement assembly and regular evaluation by its ultimate users, the biology experts. A core infrastructure that will integrate multiple views over the same ontologies and support user-friendly interaction with the dataset (viewing, editing or creating) is under development. This system will be reusable in various molecular domains, including cancer research, as a model for publishing and consuming Linked Data. This design model has been shown to be proficient in the management of multiple biomedical datasets.""" ;
+                    le:Event "ISMB 2011" ;
+                    vcard:category "Biological Sciences" ,
+                                   "Bioinformatics" .
+
+<http://qrate.me/28> rdf:id "28" ;
+                     le:atTime "0000-00-00" ;
+                     dc:title "The Importance of Modularity in Bioinformatics Tools" ;
+                     dbpedia:author "M. Kutmon" ,
+                                    "M.P. van Iersel" ,
+                                    "T. Kelder" ,
+                                    "C.T.A. Evelo" ;
+                     dbpedia:affiliation "Department of Bioinformatics, BiGCaT, Maastricht University, The Netherlands" ;
+                     dc:description """In the last decade the amount of Bioinformatics tools has increased enormously. There are tools to store, analyze, visualize, edit or generate biological data and there are still more in development. Still, the demand for increased functionality in a single piece of software must be balanced by the need for modularity to keep the software maintainable. In complex systems, the conflicting demands of features and maintainability are often solved by plug-in systems.
+
+For example Cytoscape, an open source platform for Complex-Network Analysis and Visualization, is using a plug-in system to allow the extension of the application without changing the core. This not only allows the integration of new functionality without a new release but offers the possibility for other developers to contribute plug-ins which are needed in their research.
+
+Most tools have their own, individual plug-in system to meet the needs of the application. These are often very simple and easy to use. However, the increasing complexity of plug-ins demands more functionality of the plug-in system. We want to reuse components in different contexts, we want to have simple plug-in interfaces and we want to allow communication and dependencies between plug-ins. Many tools implemented in Java are facing these problems and there seems to be a common solution: the integration of an established modularity framework, like OSGi. To our knowledge, a number of developers of bioinformatics tools are already implementing, planning or thinking about the integration of OSGi into their applications, e.g. Cytoscape, Protege, PathVisio, ImageJ, Jalview or Chipster. The adoption of modularity frameworks in the development of bioinformatics applications is steadily increasing and should be considered in the design of new software.
+
+By modularity in the traditional computer science sense, we mean the division of a software application into logical parts with separate concerns. To ease the development of software tools the application is separated into smaller logical parts, which are implemented individually. A set of modules can form a larger application but only if proper glue is used, OSGi is an example of such glue. OSGi allows building an infrastructure into an application to add and use different modules. It provides mechanisms to allow the individual modules to rely on and interact with each other, opening the possibility to put together different modules to solve the problem at hand. Later, modules can be removed and new ones can be added to tackle another problem. As Katy BÃ¶rner in her article âPlug-and-Play Macroscopesâ writes, we should âimplement software frameworks that empower domain scientists to assemble their own continuously evolving macroscopes, adding and upgrading existing (and removing obsolete) plug-ins to arrive at a set that is truly relevant for their workâ.
+
+Some of these modules are going to be specific for one application but a lot of these modules can actually be reused by other tools. We are talking about general features like the import or export of different file formats, a layout algorithm that could be used by several visualization tools or the lookup in an external online database. Why should every tool implement its own parser or algorithm? Modularity can help to share functionality. There is no need to start from scratch and implement everything anew, thus developers can focus on new and important features.
+
+Adding modularity, or better, a modularity framework to an existing software application is not a trivial task. The developers of Cytoscape are currently undertaking this challenge with the coming version 3. We are also working on the integration of OSGi into our pathway visualization tool PathVisio and we now want to share and compare our experiences, so others can benefit from our discoveries. This will not only help them in making a decision if OSGi is a suitable solution for them but also in the integration process itself.""" ;
+                     le:Event "ISMB 2011" ;
+                     og:url <http://precedings.nature.com/documents/6113/version/1> ;
+                     vcard:category "Biological Sciences" ,
+                                    "Bioinformatics" .
+
+<http://qrate.me/30> rdf:id "30" ;
+                     le:atTime "2009-02-27" ;
+                     dc:title "Exposing The Cancer Genome Atlas (TCGA) as a SPARQL Endpoint" ;
+                     dbpedia:author "Deus" ,
+                                    "Helena; Almeida" ,
+                                    "Jonas S." ;
+                     dbpedia:affiliation "The University of Texas M.D. Anderson Cancer Center" ;
+                     le:Event "C-SHALS 2009" ;
+                     og:url <http://precedings.nature.com/documents/6303/version/1/files/npre20116303-1.pdf> ;
+                     vcard:category "Biological Sciences" ,
+                                    "Bioinformatics" .
+
+<http://qrate.me/32> rdf:id "32" ;
+                     le:atTime "0000-00-00" ;
+                     dc:title "Improving discovery in Life Sciences and Health Care with Semantic Web Technologies and Linked Data" ;
+                     dbpedia:author "Deus" ,
+                                    "HF" ;
+                     dbpedia:affiliation "Digital Enterprise Research Instutite, NUIG" ;
+                     dc:description "One of the most enticing outcomes of biological exploration for the quantitative-minded researcher is to identify the mathematics of biology through the study of the patterns and interrelatedness of biological entities. To move forward in that direction, many pieces need to be set in place, from the availability of biological data in forms that can be computationally manipulated to the automated discovery of patterns that would derive from integration of data in many and diverse endpoints. A computational system where researchers could securely deposit any type of data and have it immediately analyzed, traversed, annotated and merged with data deposited elsewhere is a dream not yet achieved but one which could revolutionize scientific discovery and,  ultimately, help cure disease." ;
+                     vcard:category "Biological Sciences" ,
+                                    "Bioinformatics" .
+
+<http://qrate.me/221> rdf:id "221" ;
+                      le:atTime "2011-05-16" ;
+                      dc:title "Meteor Shower Alert!" ;
+                      dbpedia:author "Tom Jones" ;
+                      dbpedia:affiliation "University of Florida" ;
+                      dc:description "There is a meteor shower." ;
+                      og:url <http://www.google.com/url?sa=t&source=web&cd=1&ved=0CBkQFjAA&url=http%3A%2F%2Ffds.duke.edu%2Fdb%2Fattachment%2F399&rct=j&q=Estimating%20the%20economic%20value%20of%20water%20quality%20protection%20in%20the%20Catawba%20River%20basin&ei=nnlBTrXTD8yztwe> ;
+                      vcard:category "Astronomy / Astrophysics / Space Science" ,
+                                     "Meteors" .
+
+<http://qrate.me/231> rdf:id "231" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "Making the Semantic Desktop Work For Us" ;
+                      dbpedia:author "Laura Dragan;  Siegfried Handschuh;  Stefan Decker" ;
+                      dbpedia:affiliation "Digital Enterprise Research Institute (DERI), National University of Ireland, Galway" ;
+                      le:Event "7th Reasoning Web Summer School" .
+
+<http://qrate.me/208> rdf:id "208" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Research management tools to enhance digital repositories" ;
+                      dbpedia:author "Daniel Hook" ,
+                                     "Julia Hawks" ;
+                      dbpedia:affiliation "Symplectic" ;
+                      dc:description """For several years universities and academic institutions have taken steps to create digital repositories of their academic outputs.  This has proved to be challenging both in terms of asking faculty to engage with these systems and with navigating associated copyright issues.
+Symplectic has developed an advanced set of research management tools which integrate with repositories. Our enterprise level web-based solution, Symplectic Elements, solves the problems of research outputs data management and analysis as well as helping academics deposit into institutional repositories, with ease and clarity over copyright issues.
+Symplectic integrates with many research discovery systems and is currently working on a close integration with VIVO.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/207> rdf:id "207" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Populating a VIVO Repository with Web of Science Publication Data" ;
+                      dbpedia:author "Ellen Rotenberg" ,
+                                     "Ann Kushmerick" ;
+                      dbpedia:affiliation "Thomson Reuters IP & Science, Philadelphia, PA" ;
+                      dc:description "To be an effective collaboration tool, VIVO must provide uniquely identified research output data linked to uniquely identified individuals. In this poster, we will demonstrate a process to populate a VIVO repository with publication output data.  Thomson Reuters Web of Science web services can be used to extract institutional publication records from 12,000 peer-reviewed, multidisciplinary journals plus thousands of conference proceedings; the accompanying Article Match and Retrieval web service links and updates citation information dynamically for individual papers.  Additionally, ResearcherID, a freely available web tool  for author profiling, can be included in the process using batch uploading and downloading web services.   Finally, Research In View can utilize ResearcherID profiles for advanced author profiling and activities reporting.   These processes enable organizations implementing VIVO to download accurate publication data, assign Researcher IDs,  and post publication data in the institutional VIVO interface and in the inter-institutional ResearcherID system.  University case studies will be highlighted." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/192> rdf:id "192" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "VIVOUpdate: Washington UniversitySchool of Medicine" ;
+                      dbpedia:author "Kristi Holmes" ,
+                                     "Leslie McIntosh" ,
+                                     "Sunita Koul" ,
+                                     "Caerie Houchins" ,
+                                     "Rakesh Nagarajan" ,
+                                     "and Brad Evanoff" ;
+                      dbpedia:affiliation "VIVO, Washington University in St. Louis, School of Medicine" ;
+                      dc:description "Washington University School of Medicine has a long tradition of excellence in research, teaching, and patient care. The University implemented VIVO in 2009 as a member of the VIVO Collaboration, a consortium of seven institutions awarded funds from the National Institutes of Health to develop the infrastructure necessary to enable networking and scholarly discovery across disciplines.  Locally, VIVO is facilitated through to a partnership between the Center for Biomedical Informatics and Becker Medical Library. The implementation and adoption efforts have thus far been focused in the School of Medicine, however broader adoption efforts are currently under way. This poster will discuss the efforts of the local team over the past year and our plans for VIVO as we move forward, including: expansion of VIVO across the university and among the Washington University Institute of Clinical and Translational Science (ICTS) partner institutions; extension of VIVO with additional types of data; integration of VIVO with other local websites, including ICTS resources; incorporation of non-traditional metrics of effort within the VIVO architecture; and other contributions and collaborations to benefit the VIVO community." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/193> rdf:id "193" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "Data-mining of search request logs of a medical interface terminology: Analysis of search behavior patterns" ;
+                      dbpedia:author "Matthew Cardwell" ,
+                                     "Patrick Sugrue" ,
+                                     "Frank Naeymi-Rad" ,
+                                     "Regis Charlot" ,
+                                     " Aziz Bodal" ,
+                                     "Jose Maldonado" ,
+                                     "Gregory Aldin" ,
+                                     "Eric Frank" ,
+                                     "Fred Masarie" ;
+                      dbpedia:affiliation "Intelligent Medical Objects, Inc." ;
+                      dc:description """<p align="left">Intelligent Medical Objects, Inc. (IMO) provides physicians with interface terminologies for use within EHR systems.   A growing number of IMO users now leverage an IMO-hosted web portal to search and access such content.  In particular, over 2 million requests are made each month to an IMO-hosted problem interface terminology, often used for diagnosis searching in clinical settings.  Since each request for information to the terminology portal is logged by the portal technology, a wealth of information exists to be gleaned from users.  The current investigation illustrates learned search behaviors discovered from logged search requests as well as examples of future analysis for the development of semantic web community with public health implications.</p>
+<p align="left">In these findings we demonstrate one pattern of learning.  We show that a statistically significant correlation exists between the time during which an organization has leveraged IMO's Problem(IT) Terminology Portal and the granularity of the diagnoses requested from the vocabulary.  Certainly, such a longitudinal study of the IMO-user population provides useful internal information as well as a validation of the underlying search technology.  However, the prevalent and consistent usage of the Problem(IT) content within clinical settings may be used to provide valuable, real-time information related to national disease patterns as identified by medical professionals.  Moreover, and perhaps more importantly, such data is independent of protected health information.  Finally, we will present how a how a rich vocabulary can serve as a foundation for semantic web interactions.<p>""" ;
+                      le:Event "Vivo Conference 2011" ;
+                      og:url <http://www.e-imo.com/publications/pdfs/VIVO_2011_poster.pdf> .
+
+<http://qrate.me/189> rdf:id "189" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Tools and approaches to assess and improve usability of research networking platforms" ;
+                      dbpedia:author "Anirvan Chatterjee" ,
+                                     "Katja Reuter" ,
+                                     "Brian Turner" ,
+                                     "Mini Kahlon" ;
+                      dbpedia:affiliation "UCSF" ;
+                      dc:description "After the initial deployment of a research networking platform, the focus turns to building adoption and engagement. The UCSF Profiles research networking project makes use of web analytics, crowdsourced usability testing, and A/B testing tools to systematically assess and solve roadblocks to user engagement. We used our process for making data-driven improvements to perform three small design iterations in 2011, seeing substantial changes in user comprehension and engagement as a result. We will demonstrate our tools and approaches, and show how they can be used at other institutions." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/190> rdf:id "190" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "National VIVO Outreach" ;
+                      dbpedia:author "Kristi Holmes" ,
+                                     "Ellen Cramer" ,
+                                     "Michele Tennant" ,
+                                     "Valrie Davis" ,
+                                     "Medha Devare" ;
+                      dbpedia:affiliation "VIVO, Washington University" ;
+                      dc:description "The VIVO project has benefited from a diverse outreach strategy that incorporates more traditional scholarly activities (such as presentation of posters and talks at conferences) as well as more unique activities, such as webinars and conference calls for potential adopting institutions and project partners.  The outreach team has tried to take advantage of technology whenever possible, including the incorporation of a social media campaign that included disseminating information on a project blog, Twitter, LinkedIn, Facebook, and most recently, Google+. The VIVO team's in-person and virtual presence has enabled team members to directly engage people outside of the project about VIVO and has helped to facilitate follow-up conversations, collaboration, and adoption of the VIVO platform itself. This poster presents a snapshot of VIVO outreach efforts over the course of the two-year grant.  Major outreach efforts related to VIVO Speakers Bureau, the adoption and collaboration team, and our social media campaign will be described and mapped to better understand the reach of the outreach arm of the project." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/191> rdf:id "191" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Representing Expertise in VIVO" ;
+                      dbpedia:author "Trisha Adamus" ,
+                                     "Elizabeth Hines" ,
+                                     "Ellen Cramer" ;
+                      dbpedia:affiliation "Syracuse University" ;
+                      dc:description """Expertise is an area highlighted for further improvement by the VIVO Cornell team.  Currently, a user must read through at least several sections of a VIVO profile to gleam a researchers expertise.  Since VIVO is a collaboration tool for research and expertise, a feature providing a simple way to identify and describe expertise would fall in line with the goals of the project.  Recent updates to VIVO have included co-author and co-investigator network visualizations that have received positive user feedback.  A visualization of expertise would create a summary of a researchers areas of knowledge and further aide a user in the discovery of contacts and potential collaborators.
+VIVO displays all the academic fields, disciplines, and departments that make up the research environment at Cornell, so the scope of the project was narrowed to focus on the expertise of Cornell Cooperative Extension (CCE) members as they are an under-represented group in VIVO.   To better represent expertise, CCE workflows and tasks specific to CCE members were analyzed.  The information found in VIVO profiles was studied and specific data and object properties were selected for further expertise representation consideration.  The selected properties were analyzed for both faculty and CCE profiles using visualizations and data refining tools and ranked according to expertise relevance.  This project has given the VIVO team a better understanding of how to represent expertise, CCE efforts, and new ideas about how to accurately map this work to the VIVO ontology.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/188> rdf:id "188" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Extending OpenSocial with RDF to Benefit Research Networking Tools" ;
+                      dbpedia:author "Eric Meeks" ,
+                                     "Leslie Yuan" ,
+                                     "Griffin Weber" ,
+                                     "Maninder Kahlon" ;
+                      dbpedia:affiliation "UCSF" ;
+                      dc:description "Research Networking Tools such as VIVO and Profiles have found widespread adoption in the biomedical research community. RDF is becoming a primary means for exposing the data contained within these tools, with VIVO, Harvard Profiles and (shortly) the open source version of Profiles supporting the RDF/XML serialization format for data export.  Meanwhile, UCSF has integrated UCSF Profiles (based on the open source version of Profiles) with Apache Shindig to allow extension of the tool with shareable OpenSocial applications, and has successfully deployed a number of OpenSocial applications into production. We are now exploring ways to extend the OpenSocial API with RDF to create a powerful solution for sharing domain specific biomedical research applications across our RDF compliant Research Networking Tools." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/187> rdf:id "187" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "The Linked Clinical Data Project: Applying Semantic Web Technologies for Phenomics using Electronic Medical Records" ;
+                      dbpedia:author "Jyotishman Pathak" ,
+                                     "Richard Kiefer" ,
+                                     "Christopher Chute" ;
+                      dbpedia:affiliation "Mayo Clinic College of Medicine" ;
+                      dc:description "Systematic study of clinical phenotypes is important to better understand the genetic basis of human diseases and more effective gene-based disease management. The Linked Clinical Data (LCD) project at Mayo Clinic aims to develop a semantics-driven framework for high-throughput phenotype extraction, representation, integration, and querying from electronic medical records using emerging Semantic Web technologies, such as Linked Open Data. This poster abstract provides a brief background and overview of the recently initiated LCD project." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/186> rdf:id "186" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Sustaining our Future through Innovation - VIVO: Library-Based Support for Researcher Networking" ;
+                      dbpedia:author "Beth Auten" ,
+                                     "Paula King" ,
+                                     "Linda Butson" ,
+                                     "Hannah Norton" ,
+                                     "Michele R. Tennant" ;
+                      dbpedia:affiliation "Health Science Center Libraries, University of Florida - Gainesville" ;
+                      dc:description "At institutions around the country, librarians and other information specialists are leading efforts to support the specialized needs of researchers. The libraries at the University of Florida and The Scripps Research Institute are supporting implementation and adoption of VIVO, a tool that facilitates connection and collaborative opportunities for researchers across all disciplines. VIVO is an open source semantic web application which offers information about researchers publications, grants, research interests, service, professional affiliations, and more. Originally developed at Cornell University in 2003, VIVO is being expanded through a $12.2 million NIH grant to the University of Florida and six other institutions. Rather than retrieving the literature, the librarys traditional domain, VIVO serves as a researcher discovery tool facilitating networking and collaboration. This is a new function for our libraries and for us, though it builds on our existing skills, strengths, and roles. With the movement online of traditional library resources, the roles of librarians and information specialists in instruction and outreach are expanding to other forms of information. We are becoming skilled guides to the larger world of online information, including the social web, and beyond. While VIVO is a resource intended to connect our patrons with each other in interdisciplinary research activities, it also connects us with our patrons in a novel way, since VIVO content and purpose are fundamentally different from information resources and services typically provided by libraries. This poster will describe our experiences with library-based support of VIVO at the University of Florida and The Scripps Research Institute." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/185> rdf:id "185" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "Linking VIVO to Elsevier's SciVerse Suite via an OpenSocial Gadget" ;
+                      dbpedia:author "Nick Benik" ,
+                                     "Griffin M Weber" ;
+                      dbpedia:affiliation "Harvard Medical School" ;
+                      dc:description """Elsevier's new SciVerse Application Platform enables developers to take advantage of the voluminous data within Elsevier's ScienceDirect and Scopus products by exposing it through search APIs based on OpenSocial "gadgets". OpenSocial is a set of standardized development APIs for web-based social network applications such as Google, LinkedIn, MySpace and a number of other social networking sites. OpenSocial gadgets are modular, reusable tools that seamlessly integrate with websites supporting this standard. Elsevier's SciVerse Application Platform implements a subset of the OpenSocial APIs, and allows external developers to create gadgets that enhance the SciVerse user experience. To encourage adoption of OpenSocial and SciVerse, Elsevier, in collaboration with Tetherless World Constellation at Rensselaer Polytechnic Institute, organized a 36-hour Hackathon starting June 27, 2011, to introduce the new platform to the research community. More than 30 developers participated; and, our entry, an OpenSocial gadget that links VIVO authors to SciVerse publications, won second place.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/184> rdf:id "184" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Linked CFPs: Enriching Call for Papers as Linked Data" ;
+                      dbpedia:author "Christophe Guéret" ,
+                                     "Paul Groth" ,
+                                     "Thomas Brox Røst" ,
+                                     "Amund Tveit" ;
+                      dbpedia:affiliation "VU University Amsterdam" ;
+                      dc:description "Calls for papers (CFPs) are a part the life of every scientist. They allow editors and organizers to publicize their events, journals or other outlets recruiting high quality contributions. For scientists, these CFPs are a way of knowing where they can disseminate their work. Eventseer.net is a website for aggregating and organizing CFPs. It currently has over 16,000 CFPs. In this poster, we present a Linked Data view of Eventseer.net. This view allows for the easy reuse of this data in other applications. For example, people associated with an event are identified and given URLs. Thus, making it easier to track how people participate in scientific events.  An important contribution of the work is the technique used to keep the Linked Data view in sync with the data from Eventseer.net. Additionally, full provenance is kept and resources are reused from the Linked Data Cloud." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/182> rdf:id "182" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Automated Extraction of Laboratory Resources from Publications" ;
+                      dbpedia:author "Paul Thompson" ,
+                                     "Suzanne Thompson" ,
+                                     "Kristine Pattin" ,
+                                     "Stephen Bobin" ;
+                      dbpedia:affiliation "Dartmouth Medical School" ;
+                      dc:description "The National Center for Research Resources when funding VIVO also funded a companion project, eagle-i, which seeks to make invisible resources, such as equipment or cell lines in shared resources or research laboratories, more easily accessible.  For eagle-i resource navigators interviewed personnel in shared resources or research laboratories in order to record their resources using a web-based tool.  Because this process was very manually intensive, experiments were conducted to discover automated techniques that might assist with the manual process.  In this poster we describe one of these experiments.  One of the resource types captured by eagle-i is instrument.  In this experiment we collected the full text of journal articles written by researchers associated with a given laboratory.  We then used a commercial information extraction engine, Expert System, which has been tailored to the biomedical domain, to extract mentions of instruments from the methods sections of the journal articles.  Initial results show that Expert System used out of the box can accurately identify instrument names in methods sections, though it often is only able to match part of the full name of the instrument.  Expert System has an interface which allows a user to create rules to perform more refined extraction.  In the next stage of our experiment, we will determine whether creating such rules can lead to improved extraction of instruments from methods sections." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/183> rdf:id "183" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "The Hub: A University Reputation Management System" ;
+                      dbpedia:author "David Palmer" ;
+                      dbpedia:affiliation "The University of Hong Kong" ;
+                      dc:description "The HKU Scholars Hub, an institutional repository, has been re-engineered to enable, show, and measure Knowledge Exchange (KE), a new initiative at The University of Hong Kong (HKU), to share HKU research and skill with our community, to our mutual benefit.  With generous funding from the HK University Grants Committee (UGC), the main research funder in Hong Kong, we have made the research and the researchers of HKU highly visible.  To do this, similar to Vivo implementations, we imported data from several different silos, on campus and beyond, to make HKU ResearcherPages, or author profiles and impact portfolios for each HKU professoriate staff." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/181> rdf:id "181" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Implementing SciVal Experts at Michigan: Delivering Value by understanding Socio-Technical Challenges and Organizational Maturity" ;
+                      dbpedia:author "Michael Warden" ,
+                                     "Jeff Horon" ;
+                      dbpedia:affiliation "Elsevier" ;
+                      dc:description """Use of technology is embedded in socio-technical infrastructure that invisibly supports the work of its users (Ribes & Finholt 2009). Star and Ruhleder (1994) summarized three levels of infrastructural issues that create challenges to technology adoption and implementation. These issues include: (1) making the technologies available, (2) unforeseen contextual effects, (3) and expectations of stakeholders and how these needs and expectations relate to second level issues. Each level of institutional infrastructure involves different types of social interactions among stakeholders. Socio-technical Interaction Networks (STIN) (see Meyer 2006 for a review) provide heuristics to determine a relevant population of system interactors by identifying: (1) core interactor groups; (2) incentives; (3) excluded actors and undesired interactions; (4) existing technologies; (5) system architectural choice points; (6) resource flows; and also for mapping architectural choice points to socio-technical characteristics.  This is then layered into a process improvement approach via the Capability Maturity Model Integration (CMMI) (Carnegie Melon University, November 2010) to leverage STIN and infrastructural issues to facilitate navigating a path of increasing procedural maturity of an organization, from (1) identification, through (2) initial, (3) managed and (4) defined into a (5) full optimizing level of organizational maturity.  
+This poster adopts infrastructure theory and STIN as a conceptual framework to examine how research networking solutions, such as SciVal Experts (formerly Collexis Research Profiles),  VIVO, or Harvard Catalyst Profiles, are adopted and implemented  focusing largely on the SciVal Experts implementation at the University of Michigan Medical School.  CMMI is then adapted to help understand how maturity around IT systems helps to inform analysis and actions around STIN.  
+To date, we have found that, although research networking and expertise identification systems make for the promise of a powerful transformation in behavior, actual transformation is affected by many other factors, especially social and organizational behavior and existing resource flows. The poster will outline the strategies and tactics undertaken to support a successful adoption of a research networking tool. We will present: (1) results information that demonstrates successes so far; (2) future plans to address the remaining social and technical issues; and (3) evidence of innovative programs to use SciVal Experts to support faculty development and networking and to foster new methods of collaboration and more successful collaborations.  Real-world examples will be shared to emphasize how STIN is applied to leverage key resource flows through analysis done by the University of Michigan Medical School Office of Research to support key strategic goals.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/180> rdf:id "180" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Aligning Researcher and Research Resource Ontologies for Interoperability and Extensibility" ;
+                      dbpedia:author "Jonathan Corson-Rikert" ,
+                                     "Melissa Haendel" ,
+                                     "Ying Ding" ,
+                                     "Stella Mitchell" ,
+                                     "Carlo Torniai" ,
+                                     "Brian Lowe" ,
+                                     "Nicholas Rejack" ,
+                                     "Mansoor Ahmed" ,
+                                     "Melanie Wilson" ,
+                                     "Shanshan Chen" ,
+                                     "Paula Markes" ,
+                                     "Bing He" ;
+                      dbpedia:affiliation "Cornell University - Albert R. Mann Library" ;
+                      dc:description """The VIVO ontology team has worked closely with counterparts from the eagle-i Consortium, also funded by NIHs National Center for Research Resources. The eagle-i Consortium collects information about research resources while VIVO focuses primarily on people and their activities.  Both teams have worked to align ontologies to overcome an artificial separation between information about researchers and research resources and to provide a common framework for interoperability within single institutions or at a multi-institutional level.
+The poster will highlight through diagrams and specific examples several core principles for ongoing collaborative ontology development, including:
+ Seeking common ground in representing activities and relationships at a level of granularity appropriate for aggregation and interoperability across multiple institutions
+ Re-using classes and properties from well-established existing ontologies, with their actual URIs; in some cases this means adopting significant portions of existing ontologies, most notably the Bibliographic Ontology (http://bibliontology.com/)
+ Encouraging alignment through re-use of classes and properties from other ontologies at points of intersection, permitting any domain to develop its necessary classes and properties independently
+ Allowing sites to extend the ontology through additional imports of existing ontologies or through local, site-specific ontology extensions
+ Recognizing that controlled vocabularies of terminology must remain distinct from the eagle-i and VIVO ontologies for maximum flexibility
+VIVO and eagle-i both store data natively in RDF and use OWL ontologies as primary data models for their respective applications; both offer web-based editing of content in addition to display and search functionalities, and both are designed to support extensive instance data. The ontologies are influenced in additional ways by the high value placed on having eagle-i and VIVO data available as linked open data, and include support to help consumers of linked data follow paths to additional data exposed through an initial request.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/179> rdf:id "179" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "VIVO Outreach at the University of Florida: Strategies, Venues, and Message" ;
+                      dbpedia:author "Michele R. Tennant" ,
+                                     "Kaitlin Blackburn" ,
+                                     "Hannah F. Norton" ;
+                      dbpedia:affiliation "University of Florida" ;
+                      dc:description """Institutional outreach activities are essential for facilitating VIVO adoption and use among researchers, administrators, and high-level decision makers.  Although each of these user types will respond to different aspects of the VIVO story, the overall message provided to all stakeholders must be consistent, positive, intriguing, honest and balanced.  Keeping expectations realistic while enhancing excitement for a product under development can be tricky.
+While the outreach team may not determine policy, it is often responsible for delivering the overall project message and nuances of that message that result from specific policies. The outreach team is also often responsible for taking questions and concerns from users back to team leadership. A message developed by leadership that is clear in content and tone is essential for outreach to successfully complete its mission  ultimately, facilitating the adoption of the product.
+This poster will present outreach experiences from the University of Florida; in particular, those related to outreach strategies, venues, and message.  Timing, as it relates to product and message development, will be discussed, based on lessons learned through the two year grant period.  Questions posed by users, from simple to complex, will be explored, as will the answers offered by the outreach team and the processes undertaken to develop these answers.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/177> rdf:id "177" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Community Partner Profiles: Including Community-Based Organizations in Social Networking" ;
+                      dbpedia:author "Denise Hynes" ,
+                                     "Guru Athisenbagam" ,
+                                     "Melissa Garrett" ,
+                                     "Pavan Tej" ,
+                                     "William Baldyga" ,
+                                     "Carol Ferrans" ;
+                      dbpedia:affiliation "University of Illinois-Chicago" ;
+                      dc:description "The Biomedical Informatics Core and the Community Engagement Core at the University of Illinois-Chicago's Center for Clinical and Translational Science have collaborated to create Community Partner Profiles using VIVO. The Community Partner Profiles tool is connected to a web-based data collection system that allows community-based organizations who partner with UIC in research projects to enter information about their organization and key members.  The information entered populates a VIVO profile template and allows us to integrate the Community Partner information in our research social networking tool known as the UICollaboratory." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/175> rdf:id "175" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Enriching VIVO Profile Information from Existing Research Profile Systems: Indiana Universitys CTSI HUB and VIVO@IU" ;
+                      dbpedia:author "Ryan Cobine" ,
+                                     "Brian Keese" ,
+                                     "Jon Dunn" ,
+                                     "Robert H. Mcdonald" ,
+                                     "Anurag Shankar" ,
+                                     "Bill Barnett" ;
+                      dbpedia:affiliation "Indiana University" ;
+                      dc:description """Indiana University has been a part of the NIH, NCRR funded VIVO project since 2009. Our first undertaking in VIVO implementation was in mapping our administrative personnel data to the VIVO ontology. This effort resulted in a data framework with basic information about faculty members at IU, including contact information, academic background, current academic appointments, and courses taught. The plan was for this framework to be automatically maintained by use of the VIVO Harvester with the Indiana University Information Environment (IUIE) data warehouse. Furthermore, the data would be augmented both manually and through ad hoc data harvests of external open data systems.
+In parallel with this effort, the Indiana CTSI HUB had an existing HUBZero portal (http://www.indianactsi.org) that featured a light-weight researcher profile module for all of their affiliated researchers. As part of the VIVO@IU (http://vivo.iu.edu) effort we entered into discussions with the Indiana CTSI HUBZero team about enriching the VIVO@IU profiles from the existing CTSI HUBZero profiles. In working with an existing profile, we believed that we could harvest more pertinent researcher edited profile information for this particular set of researchers. The VIVO implementation team at IU, using processes developed for the population of the VIVO@IU site, was able to provide this seed data to the CTSI for their members that happened to have academic appointments at IU. A promotion of the HUBZero site from the center director encouraged CTSI members to review their CTSI profiles and complete them with lists of publications and research interests.  Once this step was completed, the improved data would be harvested for use within the VIVO@IU production site.
+After a series of processes that will be described in this poster we were able to process the data, normalize it for ingest into VIVO, assign unique identifiers, and map to the correct IU organizational structure for these IU CTSI affiliated research profiles. The result of this collaboration was that the CTSIs IU researcher profiles were more complete, and VIVO@IU had successfully enriched these profiles by adding researcher-edited categories for research interest keywords and publications.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/176> rdf:id "176" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Places & Spaces: Mapping Science Exhibit: Mission, Accomplishments, and Planned Activities" ;
+                      dbpedia:author "Katy Borner" ,
+                                     "Michael Stamper" ,
+                                     "Prianka Rayamajhi and Samantha Hale" ;
+                      dbpedia:affiliation "Indiana University" ;
+                      dc:description """The international Mapping Science exhibit (http://scimaps.org) was created in 2005 to inspire cross-disciplinary
+discussion on how to best track and communicate scientific activity and progress on a global scale. It brings a
+unique selection of existing and newly designed maps of science to conferences, libraries, and education centers.
+The maps are generated through rigorous scientific analysis of large-scale scholarly data sets (Shiffrin & Börner
+2004, Börner, 2010). Among others, the maps can be used to objectively identify major experts, institutions, grants,
+papers, journals, or ideas in a domain of interest; to track the emergence, bursts, and disappearance of topics; or to
+identify the most promising areas of research. The exhibit is a 10-year project and part of a larger effort to develop
+maps of science for both experts and the general public alike. Each year, 10 new maps are added resulting in 100
+maps total in 2014.
+As of 2011, the exhibit consists of 70 maps by 189 scholars, practitioners, artists, and institutions, from 11 different
+countries. Each year, a new themed set of 10 maps is added via an open call for maps and peer review by the exhibit
+advisory board and invited experts. The ten winning maps undergo a rigorous redesign process that transforms
+figures originally designed for scholarly papers or presentation slides into large format maps that can be understood
+by a general, multi-lingual audience. The final maps are sized 30-inch x 24-inch (about 76 centimeters x 61
+centimeters) and are printed in museum-quality; see http://scimaps.org/flat/exhibit_info for details.
+The display of all 70 maps and several hands-on data displays such as three illuminated globes, puzzle maps for
+kids, and the illuminated diagram display weighs in at about 1000lbs (including crates) and requires 410 ft. (38
+running meters) of wall space in addition to 350 square ft. (33 square meter) of floor space.
+Over the last 7 years, the full size exhibit has been on display at 32 venues including the New York Public Library,
+Chinese Academy of Sciences, National Research Council in Canada, American Museum of Science and Energy,
+New York Hall of Science, and Stanford University. Parts of the exhibit traveled to 62 cities in Germany as part of a
+Science Express Train. Exhibit maps are on permanent display at the National Science Foundation, Dublin, Ireland
+and Bonn, Germany. A subset of the maps is archived in the David Rumsey map collection and the New York
+Public Library. Poster versions of the exhibit travel in larger poster tubes to many more, typically academic or
+government organized events and 24 exhibit ambassadors on four continents have a copy of the poster exhibit for
+local display. In July 2011, the exhibit will have been on display at more than 200 venues in 19 countries on 6
+continents.
+The exhibit web page at http://scimaps.org serves 1800 unique visitors each month and the new exhibit Facebook
+site file://localhost/ http/::www.facebook.com:mappingscience has over 125 Facebook fans.
+The Atlas of Science: Visualizing What We Know was published by MIT press in 2010. It features the first three
+iterations of the exhibit maps together with a general introduction, historical timeline, explanation of science map
+making, and an outlook into the future of science map making and has been reviewed in Science, Nature, American
+Scientist, among others.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/174> rdf:id "174" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Using the VIVO Harvester to Automate and Maintain VIVO Profile Information at Indiana University" ;
+                      dbpedia:author "Brian Keese" ,
+                                     "Jon Dunn" ,
+                                     "Ryan Cobine and Robert H. Mcdonald" ;
+                      dbpedia:affiliation "Indiana University" ;
+                      dc:description """From the beginning of its pilot project, the Indiana University VIVO Implementation Team has focused on automatic data ingest processes. A requirement of adoption of VIVO was that data from IU sources could be automatically ingested and maintained with minimal manual intervention. To this end, it was decided to use the D2RMap mapping language to transform IUs relational data into the RDF required for VIVO. The D2RMap processing tool from the New University of Berlin was used to create RDF to be manually ingested into VIVO.  The promised Harvester tool, when available, would automate the process of running the D2RMap processor and ingesting updated data into VIVO.
+In early 2011, the Harvester was officially released and testing was begun at IU. Now the tool is fully integrated into the data ingest and maintenance processes at IU. The Harvesters Fetch tool retrieves IU institutional data using predefined D2RMap mappings. The Diff tool compares the newly fetched data with the data fetched during the previous harvest to discover deleted data, changes to old data, and new data. The Transfer Tool makes these changes to VIVOs data store. Because D2RMap assigns URIs based on local identifiers, the Harvesters Score and Match tools are not required.  Matches are guaranteed by consistent use of URIs. Running the Harvester on a set schedule keeps VIVOs data in sync with IUs centralized institutional data sources of record.
+VIVO users can manually augment their profiles by entering data beyond what is available through the harvest of IUs central data sources.  Because the Harvester enables partial updates to the VIVO semantic data-store, user-entered data will not be disturbed by wholesale re-ingests of data.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/173> rdf:id "173" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "SciVal: Developing research networks to enable collaboration" ;
+                      dbpedia:author "Daniel Calto" ;
+                      dbpedia:affiliation "Elsevier" ;
+                      dc:description """Given the rising interest in team science, translational science, and other transdisciplinary and interdisciplinary initiatives, the need to connect researchers in innovative ways is gaining increasing importance within the research community.  But understanding how researchers are (or could be) connected across their many disparate networks without requiring extensive faculty data entry is a challenging task.  
+Recognizing this challenge, the SciVal suite enables researchers to identify experts and foster collaboration at a wide range of levels including: within a single institution or group of institutions, across a state, nationally and internationally.  SciVal Experts helps researchers find experts and form partnerships across departments and schools, while the SciVal Experts Community allows researchers to search for collaborators across all SciVal Experts tools.  As partners with VIVO and the development of the National Network via Direct2experts, SciVal is also participating in initiatives to help researchers connect with other authors throughout the U.S.  In addition, SciVal Experts enables users to download the network information present within their SciVal Experts application. By utilizing different analytical software to combine data from SciVal Experts with other data sets, researchers, administrators and managers can create unique network maps and other analyses to help address various research challenges. Through these developments and other state and regional networks, SciVal is helping researchers and institutions form new collaborations, and understand and nurture existing partnerships. 
+In this poster we will discuss several of the current developments in research networking and, on a wider level, the potential for networks in multi-, inter- and transdisciplinary research. The intention of this session will be two-fold: 1) to explore ways in which the SciVal suite is helping to facilitate expertise identification and collaboration and 2) to discuss how individual researchers and institutions can utilize networks to make meaningful connections.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/171> rdf:id "171" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "USDA's Science In VIVO" ;
+                      dbpedia:author "Melanie Gardner and Sharon Drumm" ;
+                      dbpedia:affiliation "USDA/ARS" ;
+                      dc:description """The U.S. Department of Agriculture (USDA) conducts research around the world across 32 agencies and offices.  Within the Agricultural Research Service (ARS) alone, research is performed at about 100 different locations. USDA funds a tremendous amount of research each year, and partner with other within the public and private research communities.  Even though all agencies support the broader USDA mission, each is fairly independent of the other.  
+Implementation of VIVO across the research community in USDA will allow the Department to better connect not only the researchers and the research of the Department, but inform the public of the scope of its research.  ARS initiated adoption of VIVO in USDA partnering with the National Agricultural Library (NAL).  Core science agencies are included to create the prototype  Forest Service, Economic Research Service, National Agricultural Statistics Service, and the National Institute of Food and Agriculture. Other Department agencies and offices will join as the effort moves forward. One goal of the implementation process is to insure alignment with the VIVO core ontology so that, at some point in the future, it will be possible to link the USDA VIVO into other VIVO instances.  
+Shortly after the decision to adopt VIVO, the five lead institutions held a one-and-a-half day workshop with designated individuals in those institutions to learn more about VIVO ontology, the structure and data requirements. The next step was to create an organizational structure comprised of high-level individuals across the five agencies, USDA Science VIVO Board of Directors, chaired by ARS to provide intellectual guidance and vision for the implementation of VIVO web across the USDA science agencies.  A second group was established, USDA VIVO Technical Team, and is comprised of representatives from the five agencies and is lead by NAL. The two groups meet on a regular basis to work through organizational, policy and data decisions and challenges.  
+Adoption of VIVO at USDA has been a challenge because there is no centralized human resources system from which to pull people information from, and there is no centralized tracking of publications.  To add to the challenge, each agency has a different organization structure.  During this presentation, learn more about how USDA is adopting VIVO.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/170> rdf:id "170" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Finding Collaborators: Towards Interactive tools for Research Social Networks" ;
+                      dbpedia:author "Charles Borromeo" ,
+                                     "Titus Schleyer" ,
+                                     "Michael Becich" ,
+                                     "Harry Hochheiser" ;
+                      dbpedia:affiliation "University of Pittsburgh" ;
+                      dc:description "Although helping researchers find collaborators has been identified as one of the primary use cases for research social networks, little is known about the functionality and data that would best support this goal1. We have conducted preliminary user studies and evaluation of technology probes aimed at informing the design of appropriate interactive tools. Based on these studies, we have developed a preliminary model of the process of searching for collaborators. Subsequent prototypes designed to support this model will be the focus of further development and user evaluation." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/169> rdf:id "169" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Integrating VIVO with Open Innovation Commercialization Networks" ;
+                      dbpedia:author "Matt Hamilton" ,
+                                     "Zack Douglas" ;
+                      dbpedia:affiliation "Wellspring Worldwide" ;
+                      dc:description """The biggest challenges in the transfer of university technology and commercialization of new innovations are the high search costs and information asymmetries that exist when evaluating new technology opportunities. We have developed a free, on-line commercialization portal (www.flintbox.com) that advances the way the innovation community can market intellectual property (IP), distribute new materials and information, and collaborate on research projects. Flintbox currently has over 3000 licensing opportunities, but lacks details about inventors, university expertise, and other information that professionals use to evaluate commercialization opportunities. To this end, Flintbox started working with VIVO to provide a set of tools for generating researcher profiles with publication and grant information along with other non-confidential faculty information. Creating an aggregation of commercialization opportunities from Flintbox along with institutional expertise derived from VIVO establishes a network that overcomes the high search costs and asymmetric information that has previously been a barrier to on-line knowledge transfer between universities and the commercial marketplace. (1)
+Our use of VIVO is unique; we have customized our VIVO installation so that it enables us to obtain data about over 150 universities and thousands of affiliated researchers that are already part of the Flintbox innovation network. VIVO was developed as a tool for one institution but our application spans multiple organizations requiring us to make modifications to the harvesters. Flintbox already had an existing website and as a result we developed our own interface architecture to the VIVO data store using SPARQL queries via the open source tool Joseki. Additionally, we have developed custom harvesters so that we can easily integrate with on-campus, university VIVO installations to facilitate external collaborations by aggregating and then marketing relevant information on Flintbox.In our poster we demonstrate the methods of integrating VIVO information with the commercialization opportunities (e.g., patents, software licenses) contained on the Flintbox network and detail the specific benefits to universities participating in a VIVO-enabled open innovation network.(1) Dushnitsky, Gary and Thomas Klueter, 2011, Is There an eBay for Ideas? Insights from Online Knowledge Marketplaces. European Management Review, 8: 17-32.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/166> rdf:id "166" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "VIVO for CTSAs / VIVO Cross-Site Linking" ;
+                      dbpedia:author "Kenneth Lee" ,
+                                     "Dan Dickinson" ,
+                                     "Curtis Cole" ;
+                      dbpedia:affiliation "Weill Cornell Medical College" ;
+                      dc:description "The Weill Cornell Medical College (WCMC) VIVO project team would like to create a poster highlighting our implementation. We plan on having two sections for this poster.The first section will demonstrate how the WCMC VIVO instance contains data for a CTSA which contains the following institutions - Hospital for Special Surgery, Hunter College and Memorial Sloan Kettering Cancer Center. We will create a diagram showing how data feeds have been established in order to populate each institution's data into the WCMC VIVO instance.  " ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/167> rdf:id "167" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Who are you, and What do you want? - VIVO's new directions in Authentication and Authorization" ;
+                      dbpedia:author "Jim Blake" ;
+                      dbpedia:affiliation "Discovery Logic / Thomson Reuters" ;
+                      dc:description "To track the generation and flow of knowledge and its economic, social, and environmental impact requires a comprehensive model of the research ecosystem and the data to support longitudinal and network analysis.  To date, most research has focused on publication outputs, which are robust and can be normalized by field of research.  Additional data sources are needed to capture important aspects of knowledge flow not published in journals.  The VIVO initiative represents a significant step in the effort to assemble systematic information on researchers. However, on a broad scale, comprehensive data systems and capture of information needed to track knowledge flow are in a fledgling stage.  A key requirement for success is uniquely identified research output data linked to uniquely identified individuals. We will use the recently released Research In View product to demonstrate how a research management system can support tracking of knowledge flow.  We will discuss integration with the unique ID system ResearcherID, compliance with data exchange standards and interoperability with VIVO, and utilization of databases of record and document standards to ingest, export, and validate research outputs." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/168> rdf:id "168" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "A Descriptive Analysis of the National Institute of Food and Agricultures Animal Researcher Networks" ;
+                      dbpedia:author "Charlotte Baer" ,
+                                     "Robbin Shoemaker" ,
+                                     "Mark Mirando" ,
+                                     "Peter Johnson" ;
+                      dbpedia:affiliation "U. S. Department of Agriculture" ;
+                      dc:description "The focus of this study was a practical application of scientometric and network analyses to explore the current status and potential future impact of science funding on knowledge flows and collaborative scientific endeavors in five areas of animal science research funded by the U.S. Department of Agricultures National Institute of Food and Agriculture (NIFA). The Agriculture and Food Research Initiative (AFRI) was established within NIFA by the Food, Conservation, and Energy Act of 2008 (Pub. L. 110-246, i.e., the 2008 Farm Bill), and is the major competitive grant programs through which critical societal issues are addressed.  AFRI is currently structured around five major societal challenge areas to begin to focus the Departments investment in enabling an integrated approach to biological research, education, and extension:  1) Keeping American agriculture competitive while ending world hunger; 2) Improving nutrition and end child obesity; 3) Improving food safety for all Americans; 4) Securing Americas energy future, and 5) Mitigating and adapting to climate change.  To address these challenges at a meaningful scale and to achieve outcomes of relevance to the societal challenges, Congress appropriated approximately $262 million for NIFAs AFRI program in FY 2010.  AFRI grants were awarded to address priorities in United States agriculture, enable greater collaboration among institutions and organizations, and encourage integration of basic and applied research with deliberate education and extension programs.  Providing this support requires that AFRI advances fundamental sciences in support of agriculture and coordinates opportunities to build on these discoveries. Competitive programs in animal health, welfare, genomics, nutrition, growth, reproduction, and lactation are governed by overarching principles of: (1) encouraging a geographically dispersed integrated network of researchers and (2) promoting collaboration among institutions and organizations.  Using a combination of co-authorship network visualization and statistical modeling with various network measures of collaboration intensity as dependent variables, we have explored whether these two principles of networking and collaboration promoted by NIFA, are reflected in the research networks of NIFA-funded principle investigators that currently exist.  Specifically, how embedded are NIFA-funded animal researchers within the research community?  Has the NIFA-funded research prior to 2010 facilitated the creation of a geographically dispersed, virtual network of researchers, or are collaboration patterns best explained by institutional affiliation or location?  Are NIFA animal researchers more or less collaborative across disciplines? In viewing NIFA supported animal researcher networks, there are several important observational results.  Various levels of collaboration can be seen among different animal disciplines, with animal genomics researchers appearing to be most tightly networked while animal reproduction researchers are more loosely but broadly connected, and animal nutrition/growth, as well as welfare researchers, are loosely connected.  In most animal science disciplines collaboration and network clusters appear to be explained mostly by institutional affiliation, with the exception of genomics.  There appears to be somewhat limited collaboration across the animal science disciplines funded by NIFA animal programs. To address societal challenges, collaboration across disciplines and institutions is desired.  With the benchmarks for NIFA-funded competitive animal research networks established here and the implementation of VIVO at the U.S. Department of Agriculture, the new principles and approach to funding animal research at NIFA can be tested in future years to determine if desired goals are met." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/178> rdf:id "178" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Attributes to Org Charts: Using R and VIVO for Visualization of Research Activity" ;
+                      dbpedia:author "Mike Conlon" ;
+                      dbpedia:affiliation "University of Florida" ;
+                      dc:description "A library of R functions will be described and demonstrated that provide reusable capabilities for displaying research activity across organizations.  People, papers, grants, publications, dollars awarded can be displayed for units and sub-units across organizations.  The open ontology and RDF formats of VIVO data enable consumption, aggregation and display straightforward.  Software capable of displaying results for one VIVO site can be pointed at any VIVO site to produce visualizations for any site that has implemented VIVO and populated basic research objects and attributes.  Open source software will be described and visualizations using the software will be demonstrated for multi-site visualizations of organizations and their research activity." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/165> rdf:id "165" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Google Refine for VIVO" ;
+                      dbpedia:author "Dr. Curtis Cole" ,
+                                     "Dan Dickinson" ,
+                                     "Kenneth Lee" ;
+                      dbpedia:affiliation "Weill Cornell Medical College" ;
+                      dc:description "Google Refine (previously Freebase Gridworks) is a freely available open source software package for manipulating datasets. Google Refine strives to provide an easy-to-use toolset to assist in the extraction, review, transformation, and export of datasets. It is advertised as a power tool for messy data.Because of Google Refine's existing support for RDF and related technologies, Weill Cornell Medical College has authored a set of extensions for both VIVO and Google Refine to help the tools integrate with each other.  This poster will cover the rationale behind the project, a high-level view of installation, and use cases to help end-users get more out of their VIVO installation by leveraging Google Refine's capabilities." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/172> rdf:id "172" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "An Enhanced SPARQL Query Builder for VIVO" ;
+                      dbpedia:author "Michael Grobe" ,
+                                     "Anurag Shankar" ;
+                      dbpedia:affiliation "Indiana University" ;
+                      dc:description """The VIVO software distribution includes a Javascript-based graphical
+interface (GUI) developed by the School of Library and Information Science
+(SLIS) at Indiana University called the "SPARQL Query Builder".  It helps
+users build SPARQL queries intuitively from pull-down lists containing
+pre-specified combinations of subjects, predicates, and objects.
+This paper describes how the tool has been enhanced to make it more
+user-friendly. In particular, pull-down lists that reference the entire set
+of VIVO objects and predicates are provided with more "English-like" aliases
+that stand in for prefixed ontology components.
+This enhanced interface allows users to more easily browse a VIVO collection
+or to search it semantically. Experienced users and data managers can
+use it additionally to test and record SPARQL queries in other contexts.
+Results of the SPARQL queries are displayed in an HTML table format that
+is dynamically expandable.  Users may click on subject and object URIs to
+generate additional SPARQL queries that return all information connected to
+these URIs as cells embedded within the existing table. This format allows
+for nested browsing of data without having to leave the page.
+The enhanced tool has been ported to the HUBzero environment as a Joomla! component 
+as part of a VIVO mini-grant.""" ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/163> rdf:id "163" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "The changing role of blogs in science information dissemination" ;
+                      dbpedia:author "Laksamee Putnam" ;
+                      dbpedia:affiliation "Towson University" ;
+                      dc:description "In academia, research and publication are essential markers for indicating your expertise. However, the publication process can take a long time and today it is possible for information to be spread almost instantaneously. For scientists the ability to share research quickly increases cooperation and potentially makes their research stronger. There are numerous science blogs now available covering a wide range of topics including environment, medicine, life science and more. The blog entries are written by scientists all over the world and cover topics from mundane life to in-depth analysis of their current research. This poster will go over the blogs available to scientists today, how science blogs can contribute to scientific knowledge for all audiences, and the pros and cons of reading and writing a science blog." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/164> rdf:id "164" ;
+                      le:atTime "2011-08-24" ;
+                      dc:title "Global VIVO for international cancer research" ;
+                      dbpedia:author "Anil Srivastava" ,
+                                     "Rubayi Srivastava" ,
+                                     "Hemant Darbari" ;
+                      dbpedia:affiliation "Open Health Systems Laboratory (OHSL)" ;
+                      dc:description "International cancer research requires discovering and connecting oncologists from across the world through their speciality and research interests. This is equally true in North America but increasingly adoption of tools like VIVO and other organized sources on the web are making this information searchable. This is not the case with other countries where information is either not available; there are seldom established guidelines for data about individual scientists; and often the description uses non-standard free text terms not found in most medical ontologies. India's Centre for Development of Advanced Computing (CDAC) has been working with Open Health Systems Laboratory (OHSL) to use VIVO and other tools like Eagle-i to build a semantic web of information about cancer treatment and research in India (and possibly Africa) and putting together a consortium to cover other regions. Methodology is based on discovery informatics and semantic web search and description with a process of validation and consent from the individual and institute s/he is affiliated. This poster will describe the knowledge mapping and demonstrate a working prototype. A network of contributors/editors would prepare descriptions which will include reference to published papers and separately describe shared laboratory and other resources available." ;
+                      le:Event "Vivo Conference 2011" .
+
+<http://qrate.me/252> rdf:id "252" ;
+                      le:atTime "2011-09-06" ;
+                      dc:title "Arrayanalysis.org: friendly solutions for standardised microarray analysis" ;
+                      dbpedia:author "Lars Eijssen; Magali Jaillard; Michiel Adriaens; Philip de Groot; Chris Evelo" ;
+                      dbpedia:affiliation "Department of Bioinformatics, BiGCaT, P.O. Box 616, 6200 MD Maastricht University, NL /  Nutrition, Metabolism and Genomics Group, P.O. Box 8129, 6700 AA Wageningen, NL" ;
+                      dc:description """Introduction
+With the establishment of microarray technology as a major stronghold in the -omics field and the accumulation of microarray experiments in public repositories, a strong basis has been set for high-throughput bioinformatics approaches. Furthermore, a well-defined set of procedures has been developed for quality control (QC) and processing of the signals. This holds especially for gene expression chips of the Affymetrix platform. In contrast to this, there is currently a lack of a standardised, accessible, and user-friendly open-source software tool. On one hand, Affymetrix and other companies provide many integrated commercial software tools, which are mostly costly and closed source. On the other hand, many public contributions are available from the scientific community. Here, lack of an environment that bundles all functionality available compromises accessibility for non-expert users. This even leads to a tendency among researchers to omit several important steps, such as extensive QC, from their analyses.
+
+Method
+One of the largest collections of public bioinformatics contributions in the microarray field is the Bioconductor repository, to be used conjointly with the open-source statistical scripting language R. We automate methods available from several libraries within this repository, extended with home-built functionality, in one workflow performing QC and pre-processing (including normalisation) of Affymetrix expression sets.
+
+Results
+We implemented a complete QC and pre-processing workflow that can be accessed using the user-friendly interface provided at the www.arrayanalysis.org web portal. This portal offers an extensive documentation including user guides, technical documentation, example datasets and explanation of the output. The QC step generates about twenty images assessing sample, hybridisation and overall signal quality, signal comparability and biases diagnostics, and array correlation. The pre-processing step includes gene re-annotation and proposes several normalisation methods. We also provide an R wrapper function and a GenePattern module for running the workflow locally.
+We are currently adding modules for automated statistical and pathway analysis to the workflow, to be made available within the next few months. The statistical module is designed to assess group differences based on any linear model. The pathway module determines pathway overrepresentation based on PathVisio [www.pathvisio.org]. Availability of the integrated workflow will facilitate implementation of current standards, and introduction of new standards in the future. It will assist newcomers to the field in processing their microarray datasets. For experienced data analysts, it will mainly serve to facilitate running all the established functionality in one go, keeping the open-source nature preferred in scientific research.
+
+Conclusion
+We provide the scientific community with an easy-accessible, open-source and extensively documented workflow for the QC and processing of Affymetrix expression datasets. Availability of such a method enhances the application and standardisation of proper data quality control and analysis.""" ;
+                      le:Event "NuGOweek 2011" .
+
+<http://qrate.me/270> rdf:id "270" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "Exploring pathway interactions in insulin resistant mouse liver" ;
+                      dbpedia:author "Thomas Kelder;   Lars Eijssen;   Robert Kleemann;    Marjan van Erk;   Teake Kooistra;   Chris Evelo" ;
+                      dbpedia:affiliation "TNO Research Group Microbiology & Systems Biology" ;
+                      dc:description "Complex phenotypes such as insulin resistance involve different biological pathways that may interact and influence each other. Interpretation of related experimental data would be facilitated by identifying relevant pathway interactions in the context of the dataset .We developed an analysis approach to study interactions between pathways by integrating gene and protein interaction networks, biological pathway information and high-throughput data. This approach was applied to a transcriptomics dataset to investigate pathway interactions in insulin resistant mouse liver in response to a glucose challenge. We identified regulated pathway interactions at different time points following the glucose challenge and also studied the underlying protein interactions to find possible mechanisms and key proteins involved in pathway cross-talk. A large number of pathway interactions were found for the comparison between the two diet groups at t=0. The initial response to the glucose challenge (t=0.6) was typed by an acute stress response and pathway interactions showed large overlap between the two diet groups, while the pathway interaction networks for the late response were more dissimilar.Studying pathway interactions provides a new perspective on the data that complements established pathway analysis methods such as enrichment analysis. This study provided new insights in how interactions between pathways may be affected by insulin resistance. In addition, the analysis approach described here can be generally applied to different types of high-throughput data and will therefore be useful for analysis of other complex datasets as well. " ;
+                      le:Event "NuGOweek 2011" ;
+                      og:url <http://www.biomedcentral.com/1752-0509/5/127> .
+
+<http://qrate.me/336> rdf:id "336" ;
+                      le:atTime "0000-00-00" ;
+                      dc:title "The System Biology Format Converter" ;
+                      dbpedia:author "Gaël Jalowicki (1); Nicolas Rodriguez (1); Martina Kutmon (2); Jean-Baptiste Pettit (1); Lu Li (1); Arnaud Henry (1); Kedar Nath Natarajan (1); Camille Laibe (1); Chris T. Evelo (2); Nicolas Le Novère (1)" ;
+                      dbpedia:affiliation "(1) European Bioinformatics Institute (EMBL-EBI), Cambridge, UK (2) Department of Bioinformatics - BiGCaT, Maastricht University, NL" ;
+                      dc:description "The System Biology Format Converter (SBFC) aims is to provide a generic framework that potentially allows any conversion between two formats. Interoperability between formats is a recurring issue in Systems Biology. Although there are various tools available to convert models from one format to another, most of them have been independently developed and cannot easily be combined, specially to provide support for more formats. The framework is written in Java and can be used as a standalone executable. This is a collaborative project and we hope that developers will provide support for more formats by creating new modules.SBFC allows anyone to easily add new converters and to integrate existing converters with a minimum of changes. We will also allow to combine several existing converters." ;
+                      og:url <http://precedings.nature.com/documents/6363> ;
+                      vcard:category "Biological Sciences" ,
+                                     "Bioinformatics" .
+
+<http://qrate.me/337> rdf:id "337" ;
+                      le:atTime "2011-10-08" ;
+                      dc:title "A Semantic Web API for Genomics Data" ;
+                      dbpedia:author "Helena F. Deus; Eric Prudhommeaux; M. Scott Marshall" ;
+                      dbpedia:affiliation "Digital Enterprise Research Institute" ;
+                      dc:description "The web has become a primary source of data for many researchers involved in computational biology. In today's cluttered world of -omics sciences, data standards and standardized use of terminologies and ontologies play an increasingly important role in sharing and collecting data from high-throughput experiments in formats that can be interpreted by both researchers and analytical tools. An increasingly popular approach for reporting and sharing biological knowledge is by making use of Semantic Web and Linked Data technologies, a set of best practices for publishing data on the web in machine readable formats with links to data instances across datasets. With the aid of semantic web and linked data technologies, heterogeneous genomic and transcriptomic data can be seamlessly queried and integrated even when distributed across different systems. We illustrate here a methodology to integrate the results and experimental context from three different representations of microarray-based transcriptomic experiments: the Gene Expression Atlas, the W3C BioRDF task force approach to reporting provenance of microarray experiments, and the HSCI blood genomics project. Our approach does not attempt to create a warehouse of genomics data but, instead, to transform and federate queries to be executed where the data is kept using SPARQL Construct and rule mappings. We discuss how the generated query templates can be used to provide simpler, intuitive APIs for genomics that do not require knowledge of SPARQL or semantic web technologies." ;
+                      le:Event "RECOMB Comparative Genomics" ;
+                      og:url <http://precedings.nature.com/documents/6504/version/1/files/npre20116504-1.pdf> ;
+                      vcard:category "Biological Sciences" ,
+                                     "Bioinformatics" .
+
+<http://qrate.me/329> rdf:id "329" ;
+                      le:atTime "2011-09-27" ;
+                      dc:title "GENOME, EXOME, AND IMMUNE REPERTOIRE SEQUENCING AT THE HUDSONALPHA INSTITUTE FOR BIOTECHNOLOGY" ;
+                      dbpedia:author "Chris Gunter; Jian Han; Shawn Levy; Richard M. Myers" ;
+                      dbpedia:affiliation "HudsonAlpha Institute for Biotechnology, Huntsville, AL" ;
+                      dc:description "High-throughput sequencing (HTS) has enabled characterization of genomes and searches for personalized biomarkers. Our nonprofit institute has developed multiple methods for applying HTS to biomarker discovery. A new focus is the Repertoire 10K project, or R10K (www.r10k.org). We have begun a pilot project and plan to sequence the immune repertoire in 10,000 individuals." ;
+                      og:url "www.hudsonalpha.org" ;
+                      vcard:category "Biological Sciences" ,
+                                     "Biotechnology" .
+
+<http://qrate.me/320> rdf:id "320" ;
+                      le:atTime "2011-09-06" ;
+                      dc:title "Consequences of folate depletion during development and high fat intake from weaning on adiposity, gene expression and DNA methylation in adult mice" ;
+                      dbpedia:author "J.A. McKay; M.E. Adriaens; L. Xie; C. Manus; C.T. Evelo; D. Ford; J.C. Mathers" ;
+                      dbpedia:affiliation "Human Nutrition Research Centre, Newcastle University, UK /// Department of Bioinformatics - BiGCaT, Maastricht University, The Netherlands" ;
+                      dc:description """The DoHAD hypothesis proposes that nutritional insults in utero result in altered programming of offspring, causing increased adulthood disease risk.  Previously, we observed that maternal folate depletion during pregnancy pre-disposed mice to be heavier (p=0.016) and have heavier organs (liver, p=0.024; small intestine, p=0.036) in adulthood (unpublished data).  Folate depletion may influence DNA methylation at CpG dinucleotide sites through effects on the supply of the methyl donor S-adenosylmethionine, providing a candidate mechanism to explain developmental programming in this model.  We investigated the hypothesis that offspring born to folate depleted mothers may be more susceptible to increased adiposity when fed a high fat diet.  Furthermore we investigated the influence of maternal folate depletion and post weaning high fat feeding on genome wide DNA methylation patterns and gene expression.
+
+Female C57BL/J6 mice were assigned randomly to folate-adequate (2mg folic acid/kg) or folate-deplete (0.4mg folic acid/kg) diets 4 weeks prior to mating and remained on allocated diets during pregnancy and lactation.  At weaning, offspring were randomly allocated to a low (LF; 5%) or high fat (HF; 20%) diet, resulting in 4 treatment groups.  Total adiposity was assessed by MRI scanning at 3 and 6 months of age.  Mice were killed 2 weeks after MRI scanning at 6 months.  DNA and RNA were extracted simultaneously from ground liver tissue.  Hepatic RNA from male mice was hybridised to Affymetrix mouse whole genome arrays (MOA430). Methylated hepatic DNA from male mice was immunoprecipitated then amplified by PCR, before hybridisation to Roche NimbleGen Mouse DNA Methylation 3x720K CpG Island Plus RefSeq Promoter Arrays.     
+
+Folate depletion during development did not have an effect on adiposity in the offspring.  At both 3 and 6 months post-weaning high fat feeding was associated with increased adiposity (p<0.001).  Folate depletion during development caused increased expression of 726 genes and decreased expression of 34 genes (fold change of +/-1.5 and p<0.05).  High fat feeding post weaning increased expression of 191 genes and caused the down regulation of 73 genes (fold change of +/-1.5 and p<0.05).  Further analysis of data generated from array analysis will be presented.""" ;
+                      le:Event "NuGOweek 2011" ;
+                      og:url <http://www.nugo.org/nugoweek2011> ;
+                      vcard:category "Biological Sciences" ,
+                                     "Bioinformatics" .

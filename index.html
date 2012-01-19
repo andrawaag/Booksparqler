@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Sparql endpoint
+		</title>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all">
+		<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript">
+</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js" type="text/javascript">
+</script>
+		<script src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js" type="text/javascript">
+</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/i18n/jquery-ui-i18n.min.js" type="text/javascript">
+</script>
+ 		<script src="js/jquery-cookie/jquery.cookie.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi">
+</script>
+		<script src="http://www.bigcat.unimaas.nl/~andra/js/jquery.autoresize.js"></script>
+                  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+                  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+                  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+                
+		<script type="text/javascript">
+
+		// Load the Visualization API and the piechart package.
+		google.load('visualization', '1', {packages:['table']});
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		</script>
+		<style type="text/css">
+
+		body
+		{ margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+		}
+
+		#menu {
+		position: absolute;
+		left: 5px;
+		padding: 0px;
+		width: 33%;
+		}
+
+		#content {
+
+		margin-left: 33%;
+		padding: 0px;
+		margin-right: 15px;
+		}
+
+		#ProgramName {font-size:500%;
+		font-family: Arial, Helvetica, sans-serif;}
+		</style>
+                
+
+		<script type="text/javascript">
+$(function() {
+		$("#sparql").submit(function(event) {
+		event.preventDefault();
+		dataString = $("#resizable").val();
+		var selectedEndpoint = $('#SparqlEnd').val();
+		$.post('sparql.php', {query:  dataString, endpoint: selectedEndpoint }, function(data) {
+		   //$('.sparqlCanvas').html(data);
+		})
+		.success(function(data) {
+				var dt = new google.visualization.DataTable(data);
+				view = new google.visualization.Table(document.getElementById('sparqlCanvas'));
+				view.draw(dt, null);
+		});
+
+		});
+		});
+		</script>
+
+         
+
+                <script type="text/javascript"> 
+                $(function() {
+		$( "#tabs" ).tabs();
+		});
+		</script>
+		<script type="text/javascript">
+                $(document).ready(function() {
+		$('#loginToken').hide();
+                $('#loginToken').html($.cookie('userName'));
+if ($('#loginToken').text() == ""){
+   $('#login').show();
+   $('#logout').hide();
+   $('#tabs-2').hide()
+} else {
+   $('#login').hide();
+   $('#logout').show();
+   $('#tabs-2').show();
+
+}
+
+                $.post('getStoredSparqlQueries.php', {username: $.cookie('userName')}, function(data) {})
+                        .success(function(data) {
+			var menuMain = eval('('+data+')');
+                var headerItems = new Array();
+		for (var x=0; x<menuMain.menu.length; x++) {
+ 			 var itemString;
+                         if (jQuery.inArray(menuMain.menu[x].header, headerItems) == -1)  {
+                               headerItems.push(menuMain.menu[x].header);
+                               var branches = $("<li class='closed'><span class=\"folder\">"+menuMain.menu[x].header + "</span><ul id='"+menuMain.menu[x].header.replace(" ", "")+"'></ul>").appendTo("#menuTreeview");
+                               $('#menuTreeview').treeview({add: branches});
+  			 }
+                         for (var itemCounter=0; itemCounter<menuMain.menu[x].items.length; itemCounter++){
+ 				var branchesItems = $("<li class='closed'><span class=\"file\"> <a style=\"cursor:pointer;text-decoration: underline;\" onclick=\"document.getElementById('resizable').value='"+escape(menuMain.menu[x].items[itemCounter].sparql)+"'; document.getElementById('resizable').value = unescape(document.getElementById('resizable').value)\">"+menuMain.menu[x].items[itemCounter].label+"</a></span></li>").appendTo("#"+menuMain.menu[x].header.replace(" ", ""));
+			     $('#menuTreeview').treeview({add: branchesItems});
+                              } 
+			 $('#queryCategorySelect').append("<option>"+menuMain.menu[x].header+"</option>");
+		};
+		$( "#menuTreeview" ).treeview();
+		});});
+		</script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('button#queryCategoryButton').click(function() {
+     var branches = $("<li><span class=\"folder\">"+$('#querycategory').val() +"</span><ul id='"+$('#querycategory').val().replace(" ", "")+"'></ul>").appendTo("#menuTreeview");
+     $('#menuTreeview').treeview({add: branches});
+     $('#queryCategorySelect').append("<option>"+$('#querycategory').val() +"</option>");
+
+});
+});
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#resizable').autoResize();
+$('button#bookmarkNewQuery').click(function() {
+     alert($('#description').val()); 
+     var data2insert = {"username": $('#loginToken').text(), "category": $('#queryCategorySelect').val(), "description": $('#description').val(), "sparql": $('#newQuery').val(), "endpoint": $('#SparqlNewEnd').val()};
+     $.post('insertNewQuery.php', data2insert );
+     var queryCategoryTempLabel = "#"+$('#queryCategorySelect').val().replace(" ", "");
+     $(queryCategoryTempLabel).append("<li>"+$('#description').val()+"</li>");
+     $('#accordion').accordion('destroy').accordion().accordion("resize");
+});
+});
+
+</script>
+
+
+
+	</head>
+	<body>
+
+                <div id="loginButton">
+   			<form action="googleLogin.php" method="post">
+			    <button id="login">Login with Google</button>
+			</form>
+			<form action="logout.php" method="post">
+                            <button id="logout">Logout</button>
+                        </form>
+                </div>
+                <div id="loginToken"></script></div>
+                <div id="ProgramName">
+                 <Center>Booksparqler<br>
+               </div>
+
+		<div id="menu">
+ 			<ul id="menuTreeview" class="filetree"></ul>
+			</div>
+		</div>
+
+	 	<div id="content">
+			<div id="tabs">
+				<ul>
+					<li>
+						<a href="#tabs-1" id="queryLabel" name="queryLabel">Give me 10 triples</a>
+					</li>
+					                                        <li>
+                                                <a href="#tabs-2" id="createNewQuery" name="createNewQuery">Create new sparql query</a>
+                                        </li>
+
+				</ul>
+				<div id="tabs-1">
+					<div id="contact_form" class="ui-widget-content">
+						<form name="sparql" id="sparql" action="">
+							<fieldset>
+								<label id="queryLabel">Give me 10 triples</label><br>
+								<textarea id="resizable" class="ui-corner-all ui-widget-content" style="width:100%;height:100%">
+SELECT DISTINCT * 
+	WHERE {?s ?p ?o .}
+	LIMIT 10
+</textarea><br>
+								<input type="submit" name="submit" class="button" id="submit2EndpointButton" value="Submit sparql query"> <select name="SparqlEnd" id="SparqlEnd">
+ 									<option value="http://dbpedia.org/sparql">
+                                                                                DbPedia
+                                                                        </option>
+									<option value="http://semantics.bigcat.unimaas.nl:8000/sparql/">
+										WikiPathways
+									</option>
+									<option value="">BioMART</option>
+									<option value="http://petri.scai.fraunhofer.de:8080/openrdf-sesame/repositories/ops1">
+										Scaiview
+									</option>
+								</select>
+							</fieldset>
+						</form>
+					</div>
+					<div id="sparqlCanvas"></div>
+				</div>
+				<div id="tabs-2">
+					<button id="queryCategoryButton"><--Add new Category</button><input type="text" id="querycategory" />
+                                        <hr>
+                                        <select id = "queryCategorySelect"><option>== Please select a category ==</option></select><input type="text" name="description" id="description" /><button id="bookmarkNewQuery"><--Add</button>
+					<textarea id="newQuery" rows="10" cols="100"></textarea>
+					                                                                <select name="SparqlNewEnd" id="SparqlNewEnd">
+                                                                        <option value="http://semantics.bigcat.unimaas.nl:8000/sparql/">
+                                                                                WikiPathways
+                                                                        </option>
+                                                                        <option value="http://petri.scai.fraunhofer.de:8080/openrdf-sesame/repositories/ops1">
+                                                                                Scaiview
+                                                                        </option>
+                                                                </select>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
